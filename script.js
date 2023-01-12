@@ -1,5 +1,5 @@
 
-const gradutionDay = new Date('2023-04-03').getTime();
+const gradutionDay = new Date('2023-04-04').getTime();
 
 
 setInterval(countDifference, 1000);
@@ -9,7 +9,7 @@ function countDifference() {
   const now = new Date().getTime();
   const miliseconds = gradutionDay - now;
   
-  const days = Math.floor(miliseconds/1000/3600/24);
+  const days = Math.floor(miliseconds/1000/60/60/24);
   const hours = Math.floor(miliseconds/1000/60/60) % 24;
   const minutes = Math.floor(miliseconds/1000/60) % 60;
   const seconds = Math.floor(miliseconds/1000) % 60;

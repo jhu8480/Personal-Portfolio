@@ -5,6 +5,7 @@
 :root {
   --gray: rgb(72, 61, 61);
   --lightgray:rgba(220, 220, 220, 0.9);
+  --header: rgba(19, 35, 45, 0.8);
 }
 
 *, *::before, *::after {
@@ -100,7 +101,7 @@ main {
 
 .about-me .myphoto {
   width: 200px;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-left: 3.5rem;
   display: inline;
   object-fit: cover;
@@ -124,7 +125,7 @@ main {
 }
 
 #time {
-  background-color: var(--gray);
+  background-color: var(--header);
   color: var(--lightgray);
   display: flex;
   justify-content: space-around;
