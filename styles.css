@@ -144,6 +144,9 @@ main {
 
 #breaker {
   margin-top: 20px;
+  height: 3px;
+  border-color: transparent;
+  background-color: var(--header);
 }
 
 /* -------- WORK------------- */
@@ -158,130 +161,71 @@ main {
   padding-left: 3.8rem;
 }
 
-#recipe-app {
-  width: 60%;
-  border-radius: 2%;
-  box-shadow: 0px 0px 10px 10px #dbcece;
-  grid-row: 2/3;
+.recipe-app-container {
+  grid-column: 2/3;
+  border: 1.8px dashed var(--header);
+  border-radius: 10px;
+  width: 80%;
+  min-height: 500px;
+  position: relative;
+  display: flex;
 }
 
-#recipe-app:hover {
-  opacity: 0.5;
+.recipe-app-container:hover {
+  box-shadow: 0 0 3px 4px rgba(19, 35, 45, 0.3);
 }
 
-
-/* -------- Media Query ----- */
-@media screen and (max-width: 1180px) {
-  .header {
-    height: 3.5rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .nav-list {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  ul .list-item {
-    display: inline;
-    margin-right: 15px;
-    margin-left: 5px;
-    font-size: 0.8rem;
-  }
-
-  .about-me .myphoto {
-    width: 15%;
-    border-radius: 5%;
-    margin-left: 3.1rem;
-    display: inline;
-    object-fit: cover;
-  }
-
-  .personal-info {
-    margin-left: 1.1rem;
-    flex: 0 1 70%;
-    font-size: 1rem;
-    line-height: 1.3;
-  }
-
-  .personal-info p {
-    text-align: left;
-  }
-
-  .personal-info p .hi {
-    float: left;
-    font-size: 1rem;
-    margin-right: 0.3rem;
-    color: orangered;
-  }
-
-  #recipe-app {
-    width: 70%;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px 10px #dbcece;
-    grid-row: 2/3;
-  }
+.recipe-app-title {
+  width: 75%;
+  height: 2.2rem;
+  border: 1.8px solid var(--header);
+  border-radius: 5px;
+  position: absolute;
+  top:-1.1rem;
+  left: 12.5%;
+  background-color: rgba(220, 220, 220, 1);
+  text-align: center;
+  padding-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-@media screen and (max-width: 800px) {
-  .header {
-    height: 4rem;
-  }
+#meal {
+  width: 50%;
+  border-radius: 5px;
+  position: absolute;
+  top: 4rem;
+  left: 4.5%;
+}
 
-  .title {
-    font-size: 1.3rem;
-    margin-top: 20px;
-  }
+#meal img {
+  width: 100%;
+  border-radius: 5px;
+  transform: rotate(10deg);
+}
 
-  .nav-list {
-    display: block;
-    justify-content: flex-end;
-  }
-  
-  ul .list-item {
-    display: inline;
-    font-size: 0.8rem;
-    margin-left: 10px;
-  }
+#meal img:hover {
+  box-shadow: 0 0 3px 3px goldenrod;
+}
 
-  .flex-container-one {
-    display: block;
-  }
+.repo-info {
+  background-color: var(--header);
+  width: 30%;
+  position: absolute;
+  top: 13%;
+  left: 60%;
+  padding: 1rem;
+  color: var(--lightgray);
+  font-family: monospace;
+  transform: rotate(-10deg);
+  border-radius: 5px;
+}
 
-  .about-me .myphoto {
-    width: 60%;
-    border-radius: 5%;
-    margin-left: 13%;
-    display: inline;
-    object-fit: cover;
-  }
+.repo-info:hover {
+  box-shadow: 0 0 3px 3px goldenrod;
+}
 
-  .personal-info {
-    margin-left: 0.2rem;
-    flex: 0 1 70%;
-    font-size: 1rem;
-    line-height: 1.3;
-    padding: 2rem;
-  }
-
-  .personal-info p {
-    text-align: left;
-  }
-
-  .personal-info p .hi {
-    float: left;
-    font-size: 1rem;
-    margin-right: 0.3rem;
-    color: orangered;
-  }
-
-  #recipe-app {
-    width: 80%;
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px 10px #dbcece;
-    grid-row: 2/3;
-  }
+.repo-info ul li {
+  font-size: 0.8rem;
+  list-style-type: none;
 }
