@@ -15,7 +15,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #e2dded;
+  background: #E6DADA;
+  background: -webkit-linear-gradient(to top, #274046, #E6DADA);
+  background: linear-gradient(to top, #274046, #E6DADA);
 }
 
 /* -------- Header------------- */
@@ -155,6 +157,8 @@ main {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: 3fr 7fr;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .work h2 {
@@ -169,6 +173,7 @@ main {
   min-height: 500px;
   position: relative;
   display: flex;
+  background-color: rgba(19, 35, 45, 0.4);
 }
 
 .recipe-app-container:hover {
@@ -228,4 +233,159 @@ main {
 .repo-info ul li {
   font-size: 0.8rem;
   list-style-type: none;
+}
+
+.animation {
+  animation-name: skills;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.learning-info {
+  height: 18%;
+  width: 130%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 60%;
+  left: -20%;
+  transform: rotate(4deg);
+}
+
+@keyframes skills {
+  0% {box-shadow: 0 0 3px 3px rgba(237, 187, 59, 0.5);}
+  50% {box-shadow: 0 0 10px 3px rgba(211, 183, 24, 0.8);}
+  100% {box-shadow: 0 0 3px 3px rgba(237, 187, 59, 0.5);}
+}
+
+.learning-info p {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 1rem;
+  text-shadow: 5px 5px rgba(211, 183, 24, 0.3);
+}
+
+.deployed {
+  height: 10%;
+  width: 70%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: rotate(-7deg);
+}
+
+.deployed p a {
+  display: block;
+  font-size: 0.7rem;
+  margin-left: 10%;
+}
+
+.circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  left: 88%;
+  top: 55%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.circle div {
+  font-size: 2rem;
+  color: white;
+}
+
+.to-repo {
+  width: 25%;
+  height: 10%;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: rotate(-3deg);
+  text-align: center;
+}
+
+.the-rest {
+  grid-column: 2/3;
+  border: 1.8px dashed var(--header);
+  border-radius: 10px;
+  width: 80%;
+  min-height: 200px;
+  background-color: rgba(19, 35, 45, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.the-rest:hover {
+  box-shadow: 0 0 3px 4px rgba(19, 35, 45, 0.3);
+}
+
+.three-apps {
+  height: 80%;
+  width: 28%;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1rem;
+  text-align: left;
+  color: yellow;
+  padding: 0.4rem;
+  flex: 0 0.5 25%;
+  overflow: hidden;
+}
+
+.three-apps p a {
+  color: white;
+}
+
+/*---------Contact---------*/
+.contact {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  margin-bottom: 2rem;
+}
+
+.contact h2 {
+  color: #dfdfdf;
+  padding-left: 3.8rem;
+  grid-column: 1/2;
+}
+
+.contact ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.contact ul li {
+  color: #dfdfdf;
+  list-style: none;
+}
+
+
+/*-----footer------*/
+
+footer {
+  width: 100vw;
+  height: 3rem;
+  background-color: rgba(19, 35, 45, 0.5);
+  padding-top: 10px;
+  padding-bottom: 15px;
 }

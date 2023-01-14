@@ -50,6 +50,10 @@
     font-size: 0.8rem;
   }
 
+  .three-apps {
+    font-size: 0.8rem;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -108,4 +112,21 @@
     font-size: 0.6rem;
   }
 
+  .three-apps {
+    font-size: 0.7rem;
+  }
+
+  .to-repo {
+    font-size: 0.6rem;
+  }
+
+  .learning-info p {
+    font-size: 1.5rem;
+  }
+
+  .deployed {
+    font-size: 0.5rem;
+  }
+
 }
+
