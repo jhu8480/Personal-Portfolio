@@ -348,6 +348,12 @@ main {
   padding: 0.4rem;
   flex: 0 0.5 25%;
   overflow: hidden;
+  transition: 0.8s;
+}
+
+.three-apps:hover {
+  height: 100%;
+  font-size: 1.05rem;
 }
 
 .three-apps p a {
@@ -377,6 +383,13 @@ main {
 .contact ul li {
   color: #dfdfdf;
   list-style: none;
+  transition: 0.5s;
+}
+
+.contact ul li:hover {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: orangered;
 }
 
 
