@@ -18,7 +18,7 @@ This webpage is a personal portfolio page which contains info about my contact d
 
 # Screenshot of the page
 
-- link: https://github.com/jhu8480/02-Challenge/blob/main/Assets/screenshot.png
+[screenshot](./Assets/screenshot.png)
 
 # Authors
 
