@@ -11,7 +11,7 @@ This webpage is a personal portfolio page which contains info about my contact d
 # Getting started
 
 1. Here's the link to the deployed page:
-   https://jhu8480.github.io/02-Challenge/
+   https://jhu8480.github.io/Personal-Portfolio/
 2. Dependencies: N/A
 3. Installing: N/A
 4. Executing program: N/A
